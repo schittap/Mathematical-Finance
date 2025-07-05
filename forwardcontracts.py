@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/15-z4iVbGEj11hSS8bnIRrW7lwGH0xCSI
 """
 
-# Domestic Forward Contract P&L
+# Domestic Forward Contract P&L at Maturity Date
 position = int(input("What is your asset position? 1 for long, 0 for short: "))
 while (position != 1 or position != 0):
   position = int(input("Try again, 1 for long, 0 for short: "))
