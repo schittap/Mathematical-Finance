@@ -20,16 +20,16 @@ spot_minus_forward = abs(spot_price - forward_price)
 forward_minus_spot = abs(-1 * (spot_price - forward_price))
 
 if (position == 1):
-    if (spot_price > forward_price) :
+    if (spot_price > forward_price):
         print("You incurred a profit of $" + str(round(spot_minus_forward, 2)))
-    elif (spot_price < forward_price) :
+    elif (spot_price < forward_price):
         print("You lost $" + str(round(forward_minus_spot, 2)))
-    else :
+    else:
         print("No profit or loss")
-else :
-    if (spot_price > forward_price) :
+else:
+    if (spot_price > forward_price):
         print("You lost $" + str(round(spot_minus_forward, 2)))
-    elif (spot_price < forward_price) :
+    elif (spot_price < forward_price):
         print("You incurred a profit of $" + str(round(forward_minus_spot, 2)))
     else :
         print("No profit or loss")
