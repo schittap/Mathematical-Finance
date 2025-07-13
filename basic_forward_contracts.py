@@ -19,17 +19,24 @@ spot_price = float(input("Spot price of asset in USD: "))
 spot_minus_forward = abs(spot_price - forward_price)
 forward_minus_spot = abs(-1 * (spot_price - forward_price))
 
+forward_price = float(input("Price of forward contract in USD: "))
+spot_price = float(input("Spot price of asset in USD: "))
+spot_minus_forward = abs(spot_price - forward_price)
+forward_minus_spot = abs(-1 * (spot_price - forward_price))
+
 if (position == 1):
     if (spot_price > forward_price):
-        print("You incurred a profit of $" + str(round(spot_minus_forward, 2)))
+        print("You incurred a profit of $" + str(round(spot_minus_forward, 2))
+        + ".")
     elif (spot_price < forward_price):
-        print("You lost $" + str(round(forward_minus_spot, 2)))
+        print("You lost $" + str(round(forward_minus_spot, 2)) + ".")
     else:
-        print("No profit or loss")
-else:
+        print("No profit or loss.")
+else :
     if (spot_price > forward_price):
-        print("You lost $" + str(round(spot_minus_forward, 2)))
+        print("You lost $" + str(round(spot_minus_forward, 2)) + ".")
     elif (spot_price < forward_price):
-        print("You incurred a profit of $" + str(round(forward_minus_spot, 2)))
-    else :
-        print("No profit or loss")
+        print("You incurred a profit of $" + str(round(forward_minus_spot, 2))
+        + ".")
+    else:
+        print("No profit or loss.")
